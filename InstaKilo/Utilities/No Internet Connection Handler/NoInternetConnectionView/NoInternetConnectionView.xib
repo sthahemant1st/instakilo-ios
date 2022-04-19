@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NoInternetConnectionView" customModule="Yatru" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="tWx-7Z-sz0"/>
+                <outlet property="refreshBtn" destination="g2l-qH-0QI" id="0MY-mA-Iuc"/>
+                <outlet property="wrapperBackgroundView" destination="8XX-2n-cwC" id="uFU-at-Ufk"/>
+                <outlet property="wrapperView" destination="jUF-gD-ob0" id="b9U-Vd-PPj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8XX-2n-cwC">
+                    <rect key="frame" x="0.0" y="506" width="414" height="400"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUF-gD-ob0">
+                    <rect key="frame" x="0.0" y="506" width="414" height="400"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noInternet" translatesAutoresizingMaskIntoConstraints="NO" id="KBq-K9-amv">
+                            <rect key="frame" x="50" y="0.0" width="314" height="245"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="KBq-K9-amv" secondAttribute="height" multiplier="424:331" id="aMJ-VX-gwS"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Internet Connection Unavailable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPC-Yk-WKu">
+                            <rect key="frame" x="35" y="245" width="344" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                            <color key="textColor" name="textFieldTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are having trouble to connect  to the internet. Please check your internet connection." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMe-bg-V4q">
+                            <rect key="frame" x="15" y="290" width="384" height="31.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g2l-qH-0QI">
+                            <rect key="frame" x="132" y="336.5" width="150" height="40"/>
+                            <color key="backgroundColor" name="textFieldTextColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="150" id="OQJ-tv-gmp"/>
+                                <constraint firstAttribute="height" constant="40" id="U5M-VX-TLE"/>
+                            </constraints>
+                            <state key="normal" title="Refresh">
+                                <color key="titleColor" name="white"/>
+                            </state>
+                            <connections>
+                                <action selector="onRefreshBtnClick:" destination="-1" eventType="touchUpInside" id="eTo-3y-LQn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="g2l-qH-0QI" firstAttribute="centerX" secondItem="YMe-bg-V4q" secondAttribute="centerX" id="3n1-bi-fOw"/>
+                        <constraint firstItem="KBq-K9-amv" firstAttribute="centerX" secondItem="jUF-gD-ob0" secondAttribute="centerX" id="7w9-4h-yIw"/>
+                        <constraint firstItem="g2l-qH-0QI" firstAttribute="top" secondItem="YMe-bg-V4q" secondAttribute="bottom" constant="15" id="J2d-dy-abL"/>
+                        <constraint firstItem="KBq-K9-amv" firstAttribute="top" secondItem="jUF-gD-ob0" secondAttribute="top" id="Vf2-gP-qsB"/>
+                        <constraint firstItem="EPC-Yk-WKu" firstAttribute="top" secondItem="KBq-K9-amv" secondAttribute="bottom" id="YQJ-Y1-K2S"/>
+                        <constraint firstAttribute="height" constant="400" id="bYr-Sc-jBs"/>
+                        <constraint firstItem="YMe-bg-V4q" firstAttribute="leading" secondItem="jUF-gD-ob0" secondAttribute="leading" constant="15" id="byj-V5-WtV"/>
+                        <constraint firstItem="EPC-Yk-WKu" firstAttribute="centerX" secondItem="KBq-K9-amv" secondAttribute="centerX" id="gPM-en-2KN"/>
+                        <constraint firstItem="YMe-bg-V4q" firstAttribute="centerX" secondItem="EPC-Yk-WKu" secondAttribute="centerX" id="j84-9k-k98"/>
+                        <constraint firstItem="KBq-K9-amv" firstAttribute="leading" secondItem="jUF-gD-ob0" secondAttribute="leading" constant="50" id="jXp-YY-vMs"/>
+                        <constraint firstItem="YMe-bg-V4q" firstAttribute="top" secondItem="EPC-Yk-WKu" secondAttribute="bottom" constant="15" id="pEp-yx-1Ku"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8XX-2n-cwC" firstAttribute="centerY" secondItem="jUF-gD-ob0" secondAttribute="centerY" id="Fad-WJ-1fh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="jUF-gD-ob0" secondAttribute="bottom" constant="-44" id="PLj-Cc-o4m"/>
+                <constraint firstItem="8XX-2n-cwC" firstAttribute="width" secondItem="jUF-gD-ob0" secondAttribute="width" id="aWh-5v-LPv"/>
+                <constraint firstItem="8XX-2n-cwC" firstAttribute="height" secondItem="jUF-gD-ob0" secondAttribute="height" id="chg-eT-quk"/>
+                <constraint firstItem="jUF-gD-ob0" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="dzh-m5-d3H"/>
+                <constraint firstItem="8XX-2n-cwC" firstAttribute="centerX" secondItem="jUF-gD-ob0" secondAttribute="centerX" id="uon-DN-hWa"/>
+                <constraint firstItem="jUF-gD-ob0" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="z89-16-Sb1"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="45"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="noInternet" width="1272" height="993"/>
+        <namedColor name="textFieldTextColor">
+            <color red="0.2627450980392157" green="0.2627450980392157" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

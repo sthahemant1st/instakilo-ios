@@ -1,0 +1,12 @@
+//Debug.xcconfig
+
+// Server URL
+ROOT_URL = https:/$()/fakestoreapi.com
+
+// Keys
+API_KEY = ENTER_KEY_HERE
+
+// App Settings
+APP_NAME = InstaKilo Debug
+APP_BUNDLE_ID = np.com.hemantdebug.instaKilo
+APP_ICON = AppIcon

@@ -1,0 +1,6 @@
+framework module Pods_InstaKilo_InstaKiloUITests {
+  umbrella header "Pods-InstaKilo-InstaKiloUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
