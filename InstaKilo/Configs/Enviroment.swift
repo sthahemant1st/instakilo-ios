@@ -7,6 +7,7 @@
 
 import Foundation
 
+// TODO: project setup
 public enum Environment {
     enum BuildState {
         case debug

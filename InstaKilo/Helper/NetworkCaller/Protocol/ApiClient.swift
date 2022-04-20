@@ -15,6 +15,10 @@ protocol APIClient {
     // TODO: completion returns data which may be optimized to return decoded value
     func request(withObject object: BaseRequestModel?, completion: @escaping ((Result<Data?, Error>) -> Void))
     func rxRequest(withObject object: BaseRequestModel?) -> Single<Data?>
+    func rxRequest<ResponseType: Decodable>(
+        withObject object: BaseRequestModel?,
+        responseType: ResponseType.Type?
+    ) -> Single<ResponseType>
     //Todo: should uncomment these and make it
 //    func upload(data: Data,
 //                key: String,

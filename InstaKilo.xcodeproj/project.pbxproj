@@ -58,6 +58,18 @@
 		41D3ADB2280EDC82002B8FD0 /* NetworkCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADB1280EDC82002B8FD0 /* NetworkCaller.swift */; };
 		41D3ADB4280FBD5E002B8FD0 /* ViewIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADB3280FBD5E002B8FD0 /* ViewIdentifiable.swift */; };
 		41D3ADB6280FC617002B8FD0 /* BaseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADB5280FC617002B8FD0 /* BaseRequestModel.swift */; };
+		41D3ADB8280FFEAB002B8FD0 /* AppTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADB7280FFEAB002B8FD0 /* AppTarget.swift */; };
+		41D3ADBA280FFEDE002B8FD0 /* AppUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADB9280FFEDE002B8FD0 /* AppUrls.swift */; };
+		41D3ADBC281000E9002B8FD0 /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADBB281000E9002B8FD0 /* LoginRequest.swift */; };
+		41D3ADBE28100100002B8FD0 /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADBD28100100002B8FD0 /* LoginResponse.swift */; };
+		41D3ADC028100309002B8FD0 /* AuthEndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADBF28100309002B8FD0 /* AuthEndPoints.swift */; };
+		41D3ADC728102084002B8FD0 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADC528102084002B8FD0 /* DashboardViewController.swift */; };
+		41D3ADC828102084002B8FD0 /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D3ADC628102084002B8FD0 /* DashboardViewController.xib */; };
+		41D3ADCA281020EF002B8FD0 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADC9281020EF002B8FD0 /* DashboardViewModel.swift */; };
+		41D3ADCD281024EF002B8FD0 /* TokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADCC281024EF002B8FD0 /* TokenManager.swift */; };
+		41D3ADCF28102588002B8FD0 /* NetworkKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADCE28102588002B8FD0 /* NetworkKeys.swift */; };
+		41D3ADD228102706002B8FD0 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADD128102706002B8FD0 /* NetworkAdapter.swift */; };
+		41D3ADD428102722002B8FD0 /* NetworkRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADD328102722002B8FD0 /* NetworkRetrier.swift */; };
 		96719F0F303BD9E7922EBA4C /* Pods_InstaKilo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ED90FE95676F882B446768 /* Pods_InstaKilo.framework */; };
 		C273AE5A35055BDACBA0D967 /* Pods_InstaKiloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA46789898B6B1CA8A9CA22C /* Pods_InstaKiloTests.framework */; };
 		C5A2BCEE0E4A185A4D87C557 /* Pods_InstaKilo_InstaKiloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669976686267DEFC75091709 /* Pods_InstaKilo_InstaKiloUITests.framework */; };
@@ -137,6 +149,18 @@
 		41D3ADB1280EDC82002B8FD0 /* NetworkCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCaller.swift; sourceTree = "<group>"; };
 		41D3ADB3280FBD5E002B8FD0 /* ViewIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifiable.swift; sourceTree = "<group>"; };
 		41D3ADB5280FC617002B8FD0 /* BaseRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestModel.swift; sourceTree = "<group>"; };
+		41D3ADB7280FFEAB002B8FD0 /* AppTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTarget.swift; sourceTree = "<group>"; };
+		41D3ADB9280FFEDE002B8FD0 /* AppUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUrls.swift; sourceTree = "<group>"; };
+		41D3ADBB281000E9002B8FD0 /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		41D3ADBD28100100002B8FD0 /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		41D3ADBF28100309002B8FD0 /* AuthEndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthEndPoints.swift; sourceTree = "<group>"; };
+		41D3ADC528102084002B8FD0 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		41D3ADC628102084002B8FD0 /* DashboardViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		41D3ADC9281020EF002B8FD0 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		41D3ADCC281024EF002B8FD0 /* TokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenManager.swift; sourceTree = "<group>"; };
+		41D3ADCE28102588002B8FD0 /* NetworkKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkKeys.swift; sourceTree = "<group>"; };
+		41D3ADD128102706002B8FD0 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
+		41D3ADD328102722002B8FD0 /* NetworkRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRetrier.swift; sourceTree = "<group>"; };
 		669976686267DEFC75091709 /* Pods_InstaKilo_InstaKiloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaKilo_InstaKiloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AF0E4FFDFD289232CE6023 /* Pods-InstaKiloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKiloTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaKiloTests/Pods-InstaKiloTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A9046481C8E99159FFC5B7 /* Pods-InstaKilo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKilo.release.xcconfig"; path = "Target Support Files/Pods-InstaKilo/Pods-InstaKilo.release.xcconfig"; sourceTree = "<group>"; };
@@ -236,6 +260,8 @@
 			children = (
 				41921E72280E82120012272F /* Debug.xcconfig */,
 				41921E6E280E7F200012272F /* Enviroment.swift */,
+				41D3ADB7280FFEAB002B8FD0 /* AppTarget.swift */,
+				41D3ADB9280FFEDE002B8FD0 /* AppUrls.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -376,10 +402,13 @@
 		41D3AD92280EC004002B8FD0 /* NetworkCaller */ = {
 			isa = PBXGroup;
 			children = (
-				41D3ADAC280EDAEC002B8FD0 /* Models */,
+				41D3ADB1280EDC82002B8FD0 /* NetworkCaller.swift */,
+				41D3ADD128102706002B8FD0 /* NetworkAdapter.swift */,
+				41D3ADD328102722002B8FD0 /* NetworkRetrier.swift */,
+				41D3ADCB281024E0002B8FD0 /* Managers */,
+				41D3ADAC280EDAEC002B8FD0 /* Heplpers */,
 				41D3ADA5280EDA3A002B8FD0 /* EndPoint */,
 				41D3ADA1280ED750002B8FD0 /* Protocol */,
-				41D3ADB1280EDC82002B8FD0 /* NetworkCaller.swift */,
 			);
 			path = NetworkCaller;
 			sourceTree = "<group>";
@@ -394,6 +423,7 @@
 		41D3AD94280EC050002B8FD0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41D3ADC12810203A002B8FD0 /* Dashboard */,
 				41D3AD9E280ED3DC002B8FD0 /* Authentication */,
 			);
 			path = Modules;
@@ -438,6 +468,8 @@
 		41D3AD9D280ED25F002B8FD0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				41D3ADBB281000E9002B8FD0 /* LoginRequest.swift */,
+				41D3ADBD28100100002B8FD0 /* LoginResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -446,6 +478,7 @@
 			isa = PBXGroup;
 			children = (
 				41D3AD96280ED1CC002B8FD0 /* Login */,
+				41D3ADBF28100309002B8FD0 /* AuthEndPoints.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -468,14 +501,57 @@
 			path = EndPoint;
 			sourceTree = "<group>";
 		};
-		41D3ADAC280EDAEC002B8FD0 /* Models */ = {
+		41D3ADAC280EDAEC002B8FD0 /* Heplpers */ = {
 			isa = PBXGroup;
 			children = (
 				41D3ADAD280EDAFF002B8FD0 /* HttpMethods.swift */,
 				41D3ADAF280EDBBF002B8FD0 /* NetworkError.swift */,
 				41D3ADB5280FC617002B8FD0 /* BaseRequestModel.swift */,
+				41D3ADCE28102588002B8FD0 /* NetworkKeys.swift */,
 			);
-			path = Models;
+			path = Heplpers;
+			sourceTree = "<group>";
+		};
+		41D3ADC12810203A002B8FD0 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				41D3ADC42810205A002B8FD0 /* Model */,
+				41D3ADC328102052002B8FD0 /* ViewController */,
+				41D3ADC228102043002B8FD0 /* ViewModel */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		41D3ADC228102043002B8FD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41D3ADC9281020EF002B8FD0 /* DashboardViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41D3ADC328102052002B8FD0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41D3ADC528102084002B8FD0 /* DashboardViewController.swift */,
+				41D3ADC628102084002B8FD0 /* DashboardViewController.xib */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		41D3ADC42810205A002B8FD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41D3ADCB281024E0002B8FD0 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				41D3ADCC281024EF002B8FD0 /* TokenManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 		7E42867EC3AA7EF0B6A51BF0 /* Frameworks */ = {
@@ -616,6 +692,7 @@
 				41921E47280D6B1E0012272F /* Assets.xcassets in Resources */,
 				41D3AD9A280ED23C002B8FD0 /* LoginViewController.xib in Resources */,
 				41921E45280D6B1C0012272F /* Main.storyboard in Resources */,
+				41D3ADC828102084002B8FD0 /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,15 +838,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D3ADAB280EDA3A002B8FD0 /* UrlBuilder.swift in Sources */,
+				41D3ADCA281020EF002B8FD0 /* DashboardViewModel.swift in Sources */,
 				41D3AD68280EBBB1002B8FD0 /* String.swift in Sources */,
 				41D3AD6B280EBBB1002B8FD0 /* Optional.swift in Sources */,
 				41D3AD8D280EBF8B002B8FD0 /* UserManager.swift in Sources */,
+				41D3ADBE28100100002B8FD0 /* LoginResponse.swift in Sources */,
 				41D3AD7E280EBBD1002B8FD0 /* UICollectionView.swift in Sources */,
 				41D3ADA0280ED568002B8FD0 /* LoginViewModel.swift in Sources */,
 				41D3AD6C280EBBB1002B8FD0 /* Float.swift in Sources */,
+				41D3ADD228102706002B8FD0 /* NetworkAdapter.swift in Sources */,
 				41D3ADA9280EDA3A002B8FD0 /* EndPointProtocol.swift in Sources */,
+				41D3ADBA280FFEDE002B8FD0 /* AppUrls.swift in Sources */,
+				41D3ADBC281000E9002B8FD0 /* LoginRequest.swift in Sources */,
 				41D3AD64280EBBB1002B8FD0 /* Date.swift in Sources */,
 				41921E42280D6B1C0012272F /* ViewController.swift in Sources */,
+				41D3ADCF28102588002B8FD0 /* NetworkKeys.swift in Sources */,
 				41D3AD59280EBA2B002B8FD0 /* Utilities.swift in Sources */,
 				41D3AD88280EBCC0002B8FD0 /* Coordinator.swift in Sources */,
 				41D3AD90280EBFB6002B8FD0 /* AppConstants.swift in Sources */,
@@ -786,13 +869,17 @@
 				41D3AD8A280EBCFC002B8FD0 /* Storyboarded.swift in Sources */,
 				41921E40280D6B1C0012272F /* SceneDelegate.swift in Sources */,
 				41D3ADB2280EDC82002B8FD0 /* NetworkCaller.swift in Sources */,
+				41D3ADC728102084002B8FD0 /* DashboardViewController.swift in Sources */,
 				41D3AD7A280EBBD1002B8FD0 /* UIView.swift in Sources */,
 				41D3AD7C280EBBD1002B8FD0 /* UINavigationController+Extenstion.swift in Sources */,
 				41D3AD86280EBCA8002B8FD0 /* NibLoadable.swift in Sources */,
+				41D3ADD428102722002B8FD0 /* NetworkRetrier.swift in Sources */,
+				41D3ADCD281024EF002B8FD0 /* TokenManager.swift in Sources */,
 				41D3AD99280ED23C002B8FD0 /* LoginViewController.swift in Sources */,
 				41D3AD3E280EAF2F002B8FD0 /* HapticFeed.swift in Sources */,
 				41D3AD83280EBBD1002B8FD0 /* CGFloat.swift in Sources */,
 				41D3AD67280EBBB1002B8FD0 /* Int.swift in Sources */,
+				41D3ADC028100309002B8FD0 /* AuthEndPoints.swift in Sources */,
 				41D3AD7F280EBBD1002B8FD0 /* UITableView.swift in Sources */,
 				41D3AD7B280EBBD1002B8FD0 /* SceneDelegate+Extension.swift in Sources */,
 				41D3ADAE280EDAFF002B8FD0 /* HttpMethods.swift in Sources */,
@@ -802,6 +889,7 @@
 				41D3ADB0280EDBBF002B8FD0 /* NetworkError.swift in Sources */,
 				41D3AD69280EBBB1002B8FD0 /* Double.swift in Sources */,
 				41D3AD41280EB11B002B8FD0 /* StoreReviewHelper.swift in Sources */,
+				41D3ADB8280FFEAB002B8FD0 /* AppTarget.swift in Sources */,
 				41D3AD6A280EBBB1002B8FD0 /* Bool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

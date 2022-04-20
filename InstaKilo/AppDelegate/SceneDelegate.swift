@@ -17,7 +17,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window = UIWindow(windowScene: windowScene)
         
         let loginVC = LoginViewController.loadFromNib()
-        let loginViewModel = LoginViewModel()
+        let loginViewModel = LoginViewModel(
+            loginEndPoint: LoginEndPoint()
+        )
         loginVC.viewModel = loginViewModel
         let navigationController = UINavigationController(rootViewController: loginVC)
         
