@@ -9,17 +9,21 @@
 import Foundation
 import StoreKit
 
+enum StoreReviewConstants  {
+    static let SR_AppOpenCount = "SR_AppOpenCount"
+}
+
 struct StoreReviewHelper {
     
     static func incrementAppOpenedCount() {
         // called from appdelegate didfinishLaunchingWithOptions:
         guard var appOpenCount = UserDefaults.standard
-            .value(forKey: AppConstants.UserDefaults.APP_OPENED_COUNT) as? Int else {
-            UserDefaults.standard.set(1, forKey: AppConstants.UserDefaults.APP_OPENED_COUNT)
+            .value(forKey: StoreReviewConstants.SR_AppOpenCount) as? Int else {
+            UserDefaults.standard.set(1, forKey: StoreReviewConstants.SR_AppOpenCount)
             return
         }
         appOpenCount += 1
-        UserDefaults.standard.set(appOpenCount, forKey: AppConstants.UserDefaults.APP_OPENED_COUNT)
+        UserDefaults.standard.set(appOpenCount, forKey: StoreReviewConstants.SR_AppOpenCount)
         
     }
     
@@ -27,8 +31,8 @@ struct StoreReviewHelper {
         // call this whenever appropriate
         // this will not be shown everytime. Apple has some internal logic on how to show this.
         guard let appOpenCount = UserDefaults.standard
-            .value(forKey: AppConstants.UserDefaults.APP_OPENED_COUNT) as? Int else {
-            UserDefaults.standard.set(1, forKey: AppConstants.UserDefaults.APP_OPENED_COUNT)
+            .value(forKey: StoreReviewConstants.SR_AppOpenCount) as? Int else {
+            UserDefaults.standard.set(1, forKey: StoreReviewConstants.SR_AppOpenCount)
             return
         }
         

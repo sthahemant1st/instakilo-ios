@@ -35,10 +35,11 @@ struct Utilities {
         return (UIScreen.main.nativeBounds.height == 960.0) || (UIScreen.main.nativeBounds.height == 1136.0)
     }
     
-    static var bottomSafeAreaHeight: CGFloat {
-        guard let window = Utilities.appDelegate?.window else { return 0.0 }
-        return window.safeAreaInsets.bottom
-    }
+    // should take bottomSafeAreaHeight form SceneDelegate.
+//    static var bottomSafeAreaHeight: CGFloat {
+//        guard let window = Utilities.appDelegate?.window else { return 0.0 }
+//        return window.safeAreaInsets.bottom
+//    }
     
     static func stringify(json: Any, prettyPrinted: Bool = false) -> String {
         var options: JSONSerialization.WritingOptions = []

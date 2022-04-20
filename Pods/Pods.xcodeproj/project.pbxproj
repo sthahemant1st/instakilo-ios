@@ -1080,7 +1080,7 @@
 		9B5EC14947AB36E68F8437018A7F5843 /* DispatchQueue+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DispatchQueue+Extensions.swift"; path = "Platform/DispatchQueue+Extensions.swift"; sourceTree = "<group>"; };
 		9C4B699AB4B61AB8DE45A6741CCA1041 /* Pods-InstaKilo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-InstaKilo-dummy.m"; sourceTree = "<group>"; };
 		9D8D921E22411CE3F67470A38EAF06E4 /* VirtualTimeConverterType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VirtualTimeConverterType.swift; path = RxSwift/Schedulers/VirtualTimeConverterType.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EEE4BF980060680CB7282C6896D35E3 /* Debug.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Debug.swift; path = RxSwift/Observables/Debug.swift; sourceTree = "<group>"; };
 		9F197EE15498C13D5882020750EFFCED /* SharedSequence+Operators+arity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SharedSequence+Operators+arity.swift"; path = "RxCocoa/Traits/SharedSequence/SharedSequence+Operators+arity.swift"; sourceTree = "<group>"; };
 		9F2808DACBE876CE6E0647BF5F1FBE8C /* UISegmentedControl+Rx.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISegmentedControl+Rx.swift"; path = "RxCocoa/iOS/UISegmentedControl+Rx.swift"; sourceTree = "<group>"; };
@@ -1514,7 +1514,6 @@
 				6320458CCFF83992F87BCCB7F77E18B1 /* Core */,
 				DE4E3F42CB40C3DF1F1E4044442D2F29 /* Support Files */,
 			);
-			name = Kingfisher;
 			path = Kingfisher;
 			sourceTree = "<group>";
 		};
@@ -1528,7 +1527,6 @@
 				85E7B7FC18431EDD0107F7480F7624EB /* Utils.swift */,
 				B9198D4C0D243C8393BE45F744B845BC /* Support Files */,
 			);
-			name = RxRelay;
 			path = RxRelay;
 			sourceTree = "<group>";
 		};
@@ -1793,7 +1791,6 @@
 				3EDB1ED23D0373AFD14770B2DD021380 /* Zip+Collection.swift */,
 				B40B05434AF33CA0553D278D57DFD24C /* Support Files */,
 			);
-			name = RxSwift;
 			path = RxSwift;
 			sourceTree = "<group>";
 		};
@@ -1838,7 +1835,6 @@
 				DB201F18E382FD64B0F247A2D8628F0C /* Validation.swift */,
 				B282AA18CDEE6EDCB81710484D223E6B /* Support Files */,
 			);
-			name = Alamofire;
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
@@ -1858,7 +1854,6 @@
 				80F4B4AEC1BB65CF095559719E801F29 /* SwiftyBeaver.swift */,
 				1430CF393DE3F6511A7956AF49922EEB /* Support Files */,
 			);
-			name = SwiftyBeaver;
 			path = SwiftyBeaver;
 			sourceTree = "<group>";
 		};
@@ -1868,7 +1863,6 @@
 				4967F1CBD87336FF2AB7ED1A677238E7 /* Core */,
 				619CAC0B7903F73E1228C68C63FECB90 /* Support Files */,
 			);
-			name = RxAlamofire;
 			path = RxAlamofire;
 			sourceTree = "<group>";
 		};
@@ -2017,7 +2011,6 @@
 				BBB75819602BDECED2EF6364BDD6F5B3 /* WKWebView+Rx.swift */,
 				0316CBDEBC919F6963DDD7563E5A7374 /* Support Files */,
 			);
-			name = RxCocoa;
 			path = RxCocoa;
 			sourceTree = "<group>";
 		};
@@ -2027,7 +2020,6 @@
 				070D5E7990A26C87F8BF9F4376036AC5 /* Reachability.swift */,
 				7C7C851F178CABBEB9CE2D7239BB4064 /* Support Files */,
 			);
-			name = ReachabilitySwift;
 			path = ReachabilitySwift;
 			sourceTree = "<group>";
 		};
@@ -2091,7 +2083,6 @@
 				F0ECA43FA851B965845D4E5B43E9CA86 /* IQUIViewController+Additions.swift */,
 				A3AA796FF793F5CA2EF12161E86DC762 /* Support Files */,
 			);
-			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 			sourceTree = "<group>";
 		};
@@ -2122,7 +2113,6 @@
 				EADAB9520FF5D0E50DAD40095CC8130F /* XCTest+Rx.swift */,
 				FBE58581EE3F7FEB6C57C4D8D5B0E96B /* Support Files */,
 			);
-			name = RxTest;
 			path = RxTest;
 			sourceTree = "<group>";
 		};
@@ -2180,7 +2170,6 @@
 				E5BFB9365818A29989DFB86F69A96156 /* MBProgressHUD.m */,
 				80D7F4C7C92906D7721EE738368D5087 /* Support Files */,
 			);
-			name = MBProgressHUD;
 			path = MBProgressHUD;
 			sourceTree = "<group>";
 		};
@@ -2203,7 +2192,6 @@
 				0AF6BFC3C53225BDA4F0DF30372F26F5 /* RunLoopLock.swift */,
 				5E34E5EB161B56C197F096FFAB7B9C86 /* Support Files */,
 			);
-			name = RxBlocking;
 			path = RxBlocking;
 			sourceTree = "<group>";
 		};
@@ -4165,6 +4153,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -4183,7 +4172,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -4267,6 +4256,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (

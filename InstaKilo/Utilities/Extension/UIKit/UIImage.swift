@@ -8,6 +8,7 @@
 
 import UIKit
 import Accelerate
+import Kingfisher
 
 extension UIImage {
     
@@ -31,14 +32,28 @@ extension UIImage {
     
 }
 
-// SDWebImage
 extension UIImageView {
-    func setImageFromUrl(urlString: String) {
-        self.sd_setImage(
+// SDWebImage
+//    func setImageFromUrl(urlString: String) {
+//        self.sd_setImage(
+//            with: URL(string: urlString),
+//            placeholderImage: UIImage(named: "AppIcon"),
+//            options: .lowPriority,
+//            context: nil
+//        )
+//    }
+    
+    //KingFisher
+    func setImageFromUrl(
+        urlString: String,
+        placeHolderImage: UIImage? = UIImage(named: "AppIcon")
+    ) {
+        self.kf.setImage(
             with: URL(string: urlString),
-            placeholderImage: UIImage(named: "AppIcon"),
-            options: .lowPriority,
-            context: nil
+            placeholder: placeHolderImage,
+            options: [
+                .transition(.fade(0.5))
+            ]
         )
     }
 }

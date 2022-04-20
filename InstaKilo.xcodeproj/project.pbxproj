@@ -20,15 +20,6 @@
 		41921E73280E82120012272F /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 41921E72280E82120012272F /* Debug.xcconfig */; };
 		41D3AD3E280EAF2F002B8FD0 /* HapticFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD3D280EAF2F002B8FD0 /* HapticFeed.swift */; };
 		41D3AD41280EB11B002B8FD0 /* StoreReviewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD40280EB11B002B8FD0 /* StoreReviewHelper.swift */; };
-		41D3AD4E280EB51C002B8FD0 /* NoInternetConnectionHandler.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41D3AD43280EB51C002B8FD0 /* NoInternetConnectionHandler.xcassets */; };
-		41D3AD4F280EB51C002B8FD0 /* NoInternetHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD44280EB51C002B8FD0 /* NoInternetHelper.swift */; };
-		41D3AD50280EB51C002B8FD0 /* NoInternetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD45280EB51C002B8FD0 /* NoInternetManager.swift */; };
-		41D3AD51280EB51C002B8FD0 /* NoInternetConnectionViewHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD46280EB51C002B8FD0 /* NoInternetConnectionViewHandler.swift */; };
-		41D3AD52280EB51C002B8FD0 /* NoInternetConnectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D3AD48280EB51C002B8FD0 /* NoInternetConnectionView.xib */; };
-		41D3AD53280EB51C002B8FD0 /* NoInternetConnectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD49280EB51C002B8FD0 /* NoInternetConnectionView.swift */; };
-		41D3AD54280EB51C002B8FD0 /* NoInternetViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD4B280EB51C002B8FD0 /* NoInternetViewExtension.swift */; };
-		41D3AD55280EB51C002B8FD0 /* NoInternetBaseNibLoadAbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD4C280EB51C002B8FD0 /* NoInternetBaseNibLoadAbleView.swift */; };
-		41D3AD56280EB51C002B8FD0 /* NoInternetReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD4D280EB51C002B8FD0 /* NoInternetReusableView.swift */; };
 		41D3AD59280EBA2B002B8FD0 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD58280EBA2B002B8FD0 /* Utilities.swift */; };
 		41D3AD64280EBBB1002B8FD0 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD5B280EBBB0002B8FD0 /* Date.swift */; };
 		41D3AD65280EBBB1002B8FD0 /* Array.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD5C280EBBB0002B8FD0 /* Array.swift */; };
@@ -55,6 +46,18 @@
 		41D3AD8A280EBCFC002B8FD0 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD89280EBCFC002B8FD0 /* Storyboarded.swift */; };
 		41D3AD8D280EBF8B002B8FD0 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD8C280EBF8B002B8FD0 /* UserManager.swift */; };
 		41D3AD90280EBFB6002B8FD0 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD8F280EBFB6002B8FD0 /* AppConstants.swift */; };
+		41D3AD99280ED23C002B8FD0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD97280ED23C002B8FD0 /* LoginViewController.swift */; };
+		41D3AD9A280ED23C002B8FD0 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41D3AD98280ED23C002B8FD0 /* LoginViewController.xib */; };
+		41D3ADA0280ED568002B8FD0 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3AD9F280ED568002B8FD0 /* LoginViewModel.swift */; };
+		41D3ADA3280ED763002B8FD0 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADA2280ED763002B8FD0 /* ApiClient.swift */; };
+		41D3ADA9280EDA3A002B8FD0 /* EndPointProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADA6280EDA3A002B8FD0 /* EndPointProtocol.swift */; };
+		41D3ADAA280EDA3A002B8FD0 /* EndPointBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADA7280EDA3A002B8FD0 /* EndPointBuilder.swift */; };
+		41D3ADAB280EDA3A002B8FD0 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADA8280EDA3A002B8FD0 /* UrlBuilder.swift */; };
+		41D3ADAE280EDAFF002B8FD0 /* HttpMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADAD280EDAFF002B8FD0 /* HttpMethods.swift */; };
+		41D3ADB0280EDBBF002B8FD0 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADAF280EDBBF002B8FD0 /* NetworkError.swift */; };
+		41D3ADB2280EDC82002B8FD0 /* NetworkCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADB1280EDC82002B8FD0 /* NetworkCaller.swift */; };
+		41D3ADB4280FBD5E002B8FD0 /* ViewIdentifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADB3280FBD5E002B8FD0 /* ViewIdentifiable.swift */; };
+		41D3ADB6280FC617002B8FD0 /* BaseRequestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADB5280FC617002B8FD0 /* BaseRequestModel.swift */; };
 		96719F0F303BD9E7922EBA4C /* Pods_InstaKilo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ED90FE95676F882B446768 /* Pods_InstaKilo.framework */; };
 		C273AE5A35055BDACBA0D967 /* Pods_InstaKiloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA46789898B6B1CA8A9CA22C /* Pods_InstaKiloTests.framework */; };
 		C5A2BCEE0E4A185A4D87C557 /* Pods_InstaKilo_InstaKiloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669976686267DEFC75091709 /* Pods_InstaKilo_InstaKiloUITests.framework */; };
@@ -96,15 +99,6 @@
 		41921E72280E82120012272F /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		41D3AD3D280EAF2F002B8FD0 /* HapticFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticFeed.swift; sourceTree = "<group>"; };
 		41D3AD40280EB11B002B8FD0 /* StoreReviewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreReviewHelper.swift; sourceTree = "<group>"; };
-		41D3AD43280EB51C002B8FD0 /* NoInternetConnectionHandler.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = NoInternetConnectionHandler.xcassets; sourceTree = "<group>"; };
-		41D3AD44280EB51C002B8FD0 /* NoInternetHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetHelper.swift; sourceTree = "<group>"; };
-		41D3AD45280EB51C002B8FD0 /* NoInternetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetManager.swift; sourceTree = "<group>"; };
-		41D3AD46280EB51C002B8FD0 /* NoInternetConnectionViewHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetConnectionViewHandler.swift; sourceTree = "<group>"; };
-		41D3AD48280EB51C002B8FD0 /* NoInternetConnectionView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoInternetConnectionView.xib; sourceTree = "<group>"; };
-		41D3AD49280EB51C002B8FD0 /* NoInternetConnectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetConnectionView.swift; sourceTree = "<group>"; };
-		41D3AD4B280EB51C002B8FD0 /* NoInternetViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetViewExtension.swift; sourceTree = "<group>"; };
-		41D3AD4C280EB51C002B8FD0 /* NoInternetBaseNibLoadAbleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetBaseNibLoadAbleView.swift; sourceTree = "<group>"; };
-		41D3AD4D280EB51C002B8FD0 /* NoInternetReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoInternetReusableView.swift; sourceTree = "<group>"; };
 		41D3AD58280EBA2B002B8FD0 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		41D3AD5B280EBBB0002B8FD0 /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		41D3AD5C280EBBB0002B8FD0 /* Array.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array.swift; sourceTree = "<group>"; };
@@ -131,6 +125,18 @@
 		41D3AD89280EBCFC002B8FD0 /* Storyboarded.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		41D3AD8C280EBF8B002B8FD0 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		41D3AD8F280EBFB6002B8FD0 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		41D3AD97280ED23C002B8FD0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		41D3AD98280ED23C002B8FD0 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		41D3AD9F280ED568002B8FD0 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		41D3ADA2280ED763002B8FD0 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
+		41D3ADA6280EDA3A002B8FD0 /* EndPointProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointProtocol.swift; sourceTree = "<group>"; };
+		41D3ADA7280EDA3A002B8FD0 /* EndPointBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPointBuilder.swift; sourceTree = "<group>"; };
+		41D3ADA8280EDA3A002B8FD0 /* UrlBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
+		41D3ADAD280EDAFF002B8FD0 /* HttpMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethods.swift; sourceTree = "<group>"; };
+		41D3ADAF280EDBBF002B8FD0 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		41D3ADB1280EDC82002B8FD0 /* NetworkCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCaller.swift; sourceTree = "<group>"; };
+		41D3ADB3280FBD5E002B8FD0 /* ViewIdentifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewIdentifiable.swift; sourceTree = "<group>"; };
+		41D3ADB5280FC617002B8FD0 /* BaseRequestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRequestModel.swift; sourceTree = "<group>"; };
 		669976686267DEFC75091709 /* Pods_InstaKilo_InstaKiloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaKilo_InstaKiloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AF0E4FFDFD289232CE6023 /* Pods-InstaKiloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKiloTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaKiloTests/Pods-InstaKiloTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A9046481C8E99159FFC5B7 /* Pods-InstaKilo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKilo.release.xcconfig"; path = "Target Support Files/Pods-InstaKilo/Pods-InstaKilo.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,7 +252,6 @@
 			isa = PBXGroup;
 			children = (
 				41D3AD57280EBA09002B8FD0 /* UtilitiesFunctions */,
-				41D3AD42280EB51C002B8FD0 /* No Internet Connection Handler */,
 				41D3AD3F280EB11B002B8FD0 /* StoreReviewHelper */,
 				41D3AD3C280EAF2F002B8FD0 /* HapticFeed */,
 				41D3AD3B280EAD95002B8FD0 /* Protocols */,
@@ -279,6 +284,7 @@
 		41D3AD3B280EAD95002B8FD0 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				41D3ADB3280FBD5E002B8FD0 /* ViewIdentifiable.swift */,
 				41D3AD89280EBCFC002B8FD0 /* Storyboarded.swift */,
 				41D3AD87280EBCC0002B8FD0 /* Coordinator.swift */,
 				41D3AD85280EBCA8002B8FD0 /* NibLoadable.swift */,
@@ -300,38 +306,6 @@
 				41D3AD40280EB11B002B8FD0 /* StoreReviewHelper.swift */,
 			);
 			path = StoreReviewHelper;
-			sourceTree = "<group>";
-		};
-		41D3AD42280EB51C002B8FD0 /* No Internet Connection Handler */ = {
-			isa = PBXGroup;
-			children = (
-				41D3AD43280EB51C002B8FD0 /* NoInternetConnectionHandler.xcassets */,
-				41D3AD44280EB51C002B8FD0 /* NoInternetHelper.swift */,
-				41D3AD46280EB51C002B8FD0 /* NoInternetConnectionViewHandler.swift */,
-				41D3AD4A280EB51C002B8FD0 /* Views */,
-				41D3AD47280EB51C002B8FD0 /* NoInternetConnectionView */,
-				41D3AD45280EB51C002B8FD0 /* NoInternetManager.swift */,
-			);
-			path = "No Internet Connection Handler";
-			sourceTree = "<group>";
-		};
-		41D3AD47280EB51C002B8FD0 /* NoInternetConnectionView */ = {
-			isa = PBXGroup;
-			children = (
-				41D3AD48280EB51C002B8FD0 /* NoInternetConnectionView.xib */,
-				41D3AD49280EB51C002B8FD0 /* NoInternetConnectionView.swift */,
-			);
-			path = NoInternetConnectionView;
-			sourceTree = "<group>";
-		};
-		41D3AD4A280EB51C002B8FD0 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				41D3AD4B280EB51C002B8FD0 /* NoInternetViewExtension.swift */,
-				41D3AD4C280EB51C002B8FD0 /* NoInternetBaseNibLoadAbleView.swift */,
-				41D3AD4D280EB51C002B8FD0 /* NoInternetReusableView.swift */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		41D3AD57280EBA09002B8FD0 /* UtilitiesFunctions */ = {
@@ -402,6 +376,10 @@
 		41D3AD92280EC004002B8FD0 /* NetworkCaller */ = {
 			isa = PBXGroup;
 			children = (
+				41D3ADAC280EDAEC002B8FD0 /* Models */,
+				41D3ADA5280EDA3A002B8FD0 /* EndPoint */,
+				41D3ADA1280ED750002B8FD0 /* Protocol */,
+				41D3ADB1280EDC82002B8FD0 /* NetworkCaller.swift */,
 			);
 			path = NetworkCaller;
 			sourceTree = "<group>";
@@ -416,6 +394,7 @@
 		41D3AD94280EC050002B8FD0 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				41D3AD9E280ED3DC002B8FD0 /* Authentication */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -427,6 +406,76 @@
 				41921E3F280D6B1C0012272F /* SceneDelegate.swift */,
 			);
 			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		41D3AD96280ED1CC002B8FD0 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				41D3AD9D280ED25F002B8FD0 /* Model */,
+				41D3AD9C280ED24D002B8FD0 /* ViewModel */,
+				41D3AD9B280ED242002B8FD0 /* Controller */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		41D3AD9B280ED242002B8FD0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41D3AD97280ED23C002B8FD0 /* LoginViewController.swift */,
+				41D3AD98280ED23C002B8FD0 /* LoginViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41D3AD9C280ED24D002B8FD0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				41D3AD9F280ED568002B8FD0 /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		41D3AD9D280ED25F002B8FD0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41D3AD9E280ED3DC002B8FD0 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				41D3AD96280ED1CC002B8FD0 /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		41D3ADA1280ED750002B8FD0 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				41D3ADA2280ED763002B8FD0 /* ApiClient.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		41D3ADA5280EDA3A002B8FD0 /* EndPoint */ = {
+			isa = PBXGroup;
+			children = (
+				41D3ADA6280EDA3A002B8FD0 /* EndPointProtocol.swift */,
+				41D3ADA7280EDA3A002B8FD0 /* EndPointBuilder.swift */,
+				41D3ADA8280EDA3A002B8FD0 /* UrlBuilder.swift */,
+			);
+			path = EndPoint;
+			sourceTree = "<group>";
+		};
+		41D3ADAC280EDAEC002B8FD0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				41D3ADAD280EDAFF002B8FD0 /* HttpMethods.swift */,
+				41D3ADAF280EDBBF002B8FD0 /* NetworkError.swift */,
+				41D3ADB5280FC617002B8FD0 /* BaseRequestModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7E42867EC3AA7EF0B6A51BF0 /* Frameworks */ = {
@@ -562,11 +611,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41D3AD4E280EB51C002B8FD0 /* NoInternetConnectionHandler.xcassets in Resources */,
 				41921E73280E82120012272F /* Debug.xcconfig in Resources */,
-				41D3AD52280EB51C002B8FD0 /* NoInternetConnectionView.xib in Resources */,
 				41921E4A280D6B1E0012272F /* LaunchScreen.storyboard in Resources */,
 				41921E47280D6B1E0012272F /* Assets.xcassets in Resources */,
+				41D3AD9A280ED23C002B8FD0 /* LoginViewController.xib in Resources */,
 				41921E45280D6B1C0012272F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -712,12 +760,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41D3ADAB280EDA3A002B8FD0 /* UrlBuilder.swift in Sources */,
 				41D3AD68280EBBB1002B8FD0 /* String.swift in Sources */,
 				41D3AD6B280EBBB1002B8FD0 /* Optional.swift in Sources */,
 				41D3AD8D280EBF8B002B8FD0 /* UserManager.swift in Sources */,
 				41D3AD7E280EBBD1002B8FD0 /* UICollectionView.swift in Sources */,
-				41D3AD4F280EB51C002B8FD0 /* NoInternetHelper.swift in Sources */,
+				41D3ADA0280ED568002B8FD0 /* LoginViewModel.swift in Sources */,
 				41D3AD6C280EBBB1002B8FD0 /* Float.swift in Sources */,
+				41D3ADA9280EDA3A002B8FD0 /* EndPointProtocol.swift in Sources */,
 				41D3AD64280EBBB1002B8FD0 /* Date.swift in Sources */,
 				41921E42280D6B1C0012272F /* ViewController.swift in Sources */,
 				41D3AD59280EBA2B002B8FD0 /* Utilities.swift in Sources */,
@@ -727,27 +777,29 @@
 				41D3AD66280EBBB1002B8FD0 /* NSAttributedString.swift in Sources */,
 				41D3AD65280EBBB1002B8FD0 /* Array.swift in Sources */,
 				41D3AD80280EBBD1002B8FD0 /* UITextField.swift in Sources */,
-				41D3AD50280EB51C002B8FD0 /* NoInternetManager.swift in Sources */,
 				41D3AD81280EBBD1002B8FD0 /* UIImage.swift in Sources */,
+				41D3ADB6280FC617002B8FD0 /* BaseRequestModel.swift in Sources */,
+				41D3ADB4280FBD5E002B8FD0 /* ViewIdentifiable.swift in Sources */,
 				41D3AD82280EBBD1002B8FD0 /* UIViewController.swift in Sources */,
+				41D3ADAA280EDA3A002B8FD0 /* EndPointBuilder.swift in Sources */,
 				41921E6F280E7F200012272F /* Enviroment.swift in Sources */,
 				41D3AD8A280EBCFC002B8FD0 /* Storyboarded.swift in Sources */,
 				41921E40280D6B1C0012272F /* SceneDelegate.swift in Sources */,
-				41D3AD56280EB51C002B8FD0 /* NoInternetReusableView.swift in Sources */,
-				41D3AD53280EB51C002B8FD0 /* NoInternetConnectionView.swift in Sources */,
-				41D3AD55280EB51C002B8FD0 /* NoInternetBaseNibLoadAbleView.swift in Sources */,
+				41D3ADB2280EDC82002B8FD0 /* NetworkCaller.swift in Sources */,
 				41D3AD7A280EBBD1002B8FD0 /* UIView.swift in Sources */,
-				41D3AD54280EB51C002B8FD0 /* NoInternetViewExtension.swift in Sources */,
 				41D3AD7C280EBBD1002B8FD0 /* UINavigationController+Extenstion.swift in Sources */,
 				41D3AD86280EBCA8002B8FD0 /* NibLoadable.swift in Sources */,
+				41D3AD99280ED23C002B8FD0 /* LoginViewController.swift in Sources */,
 				41D3AD3E280EAF2F002B8FD0 /* HapticFeed.swift in Sources */,
 				41D3AD83280EBBD1002B8FD0 /* CGFloat.swift in Sources */,
 				41D3AD67280EBBB1002B8FD0 /* Int.swift in Sources */,
 				41D3AD7F280EBBD1002B8FD0 /* UITableView.swift in Sources */,
 				41D3AD7B280EBBD1002B8FD0 /* SceneDelegate+Extension.swift in Sources */,
+				41D3ADAE280EDAFF002B8FD0 /* HttpMethods.swift in Sources */,
+				41D3ADA3280ED763002B8FD0 /* ApiClient.swift in Sources */,
 				41D3AD84280EBBD1002B8FD0 /* UIApplication.swift in Sources */,
 				41D3AD7D280EBBD1002B8FD0 /* UIColor.swift in Sources */,
-				41D3AD51280EB51C002B8FD0 /* NoInternetConnectionViewHandler.swift in Sources */,
+				41D3ADB0280EDBBF002B8FD0 /* NetworkError.swift in Sources */,
 				41D3AD69280EBBB1002B8FD0 /* Double.swift in Sources */,
 				41D3AD41280EB11B002B8FD0 /* StoreReviewHelper.swift in Sources */,
 				41D3AD6A280EBBB1002B8FD0 /* Bool.swift in Sources */,
@@ -843,6 +895,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -903,6 +956,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -935,7 +989,6 @@
 				INFOPLIST_FILE = InstaKilo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -966,7 +1019,6 @@
 				INFOPLIST_FILE = InstaKilo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
