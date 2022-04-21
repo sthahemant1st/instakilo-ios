@@ -9,7 +9,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
     // MARK: variables
     weak var coordinator: AuthCoordinator!
     let disposeBag = DisposeBag()
@@ -21,6 +21,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     override func viewDidLoad() {
+        baseViewModel = viewModel
         super.viewDidLoad()
         setupViewModel()
     }

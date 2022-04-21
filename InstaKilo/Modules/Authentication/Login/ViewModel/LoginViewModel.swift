@@ -9,7 +9,7 @@ import Foundation
 import RxSwift
 import RxRelay
 
-class LoginViewModel {
+class LoginViewModel: BaseViewModel {
     // MARK: rx variables
     var username = BehaviorRelay<String>(value: "")
     var password = BehaviorRelay<String>(value: "")
@@ -25,6 +25,7 @@ class LoginViewModel {
         loginEndPoint: EndPointProtocol
     ) {
         loginApiClient = NetworkCaller(endPoint: loginEndPoint)
+        super.init()
         bind()
     }
     
@@ -41,22 +42,22 @@ class LoginViewModel {
         } else if password.value.isEmpty {
             validateError.onNext("Invalid Password")
         } else {
-//            loginSuccess.onNext(())
             login()
         }
     }
     
     private func login() {
+        showActivityIndicator()
         let request = LoginRequest(username: username.value, password: password.value)
         loginApiClient.rxRequest(withObject: request, responseType: LoginResponse.self)
             .subscribe { [weak self] data in
                 guard let self = self else { return }
-                print("Result ======> \(data)")
                 TokenManager.global.accessToken = data.token
                 self.loginSuccess.onNext(())
             } onFailure: { error in
-                print("error =====> " + error.localizedDescription)
+                self.handleFailure(error)
             }.disposed(by: disposeBag)
+        hideActivityIndicator()
     }
     
     // MARK: public functions

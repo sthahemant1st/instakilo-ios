@@ -74,6 +74,8 @@
 		41D3ADD82811101D002B8FD0 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADD72811101D002B8FD0 /* AuthCoordinator.swift */; };
 		41D3ADDA2811268C002B8FD0 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADD92811268C002B8FD0 /* UserSessionManager.swift */; };
 		41D3ADDC2811286C002B8FD0 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADDB2811286C002B8FD0 /* DashboardCoordinator.swift */; };
+		41D3ADDF2811454C002B8FD0 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADDE2811454C002B8FD0 /* BaseViewModel.swift */; };
+		41D3ADEB2811464D002B8FD0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADEA2811464D002B8FD0 /* BaseViewController.swift */; };
 		96719F0F303BD9E7922EBA4C /* Pods_InstaKilo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ED90FE95676F882B446768 /* Pods_InstaKilo.framework */; };
 		C273AE5A35055BDACBA0D967 /* Pods_InstaKiloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA46789898B6B1CA8A9CA22C /* Pods_InstaKiloTests.framework */; };
 		C5A2BCEE0E4A185A4D87C557 /* Pods_InstaKilo_InstaKiloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669976686267DEFC75091709 /* Pods_InstaKilo_InstaKiloUITests.framework */; };
@@ -169,6 +171,8 @@
 		41D3ADD72811101D002B8FD0 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		41D3ADD92811268C002B8FD0 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
 		41D3ADDB2811286C002B8FD0 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
+		41D3ADDE2811454C002B8FD0 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		41D3ADEA2811464D002B8FD0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		669976686267DEFC75091709 /* Pods_InstaKilo_InstaKiloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaKilo_InstaKiloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AF0E4FFDFD289232CE6023 /* Pods-InstaKiloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKiloTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaKiloTests/Pods-InstaKiloTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A9046481C8E99159FFC5B7 /* Pods-InstaKilo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKilo.release.xcconfig"; path = "Target Support Files/Pods-InstaKilo/Pods-InstaKilo.release.xcconfig"; sourceTree = "<group>"; };
@@ -285,6 +289,7 @@
 		41D3AD38280EAD5E002B8FD0 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				41D3ADDD2811453A002B8FD0 /* Base */,
 				41D3AD57280EBA09002B8FD0 /* UtilitiesFunctions */,
 				41D3AD3F280EB11B002B8FD0 /* StoreReviewHelper */,
 				41D3AD3C280EAF2F002B8FD0 /* HapticFeed */,
@@ -403,6 +408,7 @@
 		41D3AD91280EBFF3002B8FD0 /* StyledComponent */ = {
 			isa = PBXGroup;
 			children = (
+				41D3ADE0281145B4002B8FD0 /* View */,
 			);
 			path = StyledComponent;
 			sourceTree = "<group>";
@@ -564,6 +570,22 @@
 				41D3ADD92811268C002B8FD0 /* UserSessionManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		41D3ADDD2811453A002B8FD0 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				41D3ADDE2811454C002B8FD0 /* BaseViewModel.swift */,
+				41D3ADEA2811464D002B8FD0 /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		41D3ADE0281145B4002B8FD0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7E42867EC3AA7EF0B6A51BF0 /* Frameworks */ = {
@@ -854,6 +876,7 @@
 				41D3AD68280EBBB1002B8FD0 /* String.swift in Sources */,
 				41D3AD6B280EBBB1002B8FD0 /* Optional.swift in Sources */,
 				41D3AD8D280EBF8B002B8FD0 /* UserManager.swift in Sources */,
+				41D3ADEB2811464D002B8FD0 /* BaseViewController.swift in Sources */,
 				41D3ADBE28100100002B8FD0 /* LoginResponse.swift in Sources */,
 				41D3AD7E280EBBD1002B8FD0 /* UICollectionView.swift in Sources */,
 				41D3ADA0280ED568002B8FD0 /* LoginViewModel.swift in Sources */,
@@ -902,6 +925,7 @@
 				41D3ADA3280ED763002B8FD0 /* ApiClient.swift in Sources */,
 				41D3AD84280EBBD1002B8FD0 /* UIApplication.swift in Sources */,
 				41D3AD7D280EBBD1002B8FD0 /* UIColor.swift in Sources */,
+				41D3ADDF2811454C002B8FD0 /* BaseViewModel.swift in Sources */,
 				41D3ADB0280EDBBF002B8FD0 /* NetworkError.swift in Sources */,
 				41D3AD69280EBBB1002B8FD0 /* Double.swift in Sources */,
 				41D3AD41280EB11B002B8FD0 /* StoreReviewHelper.swift in Sources */,

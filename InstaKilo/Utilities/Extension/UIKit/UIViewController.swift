@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MBProgressHUD
 
 extension UIViewController {
     
@@ -141,4 +142,50 @@ extension UIViewController {
         
         return instantiateFromNib()
     }
+}
+
+extension UIViewController {
+    private func setProgressHud() -> MBProgressHUD {
+        let progressHud: MBProgressHUD = MBProgressHUD.showAdded(to: self.view, animated: true)
+        // progressHud.tintColor = UIColor.darkGray
+        progressHud.removeFromSuperViewOnHide = true
+        progressHud.mode = .indeterminate
+        progressHud.animationType = .fade
+        progressHud.contentColor = .lightGray
+        // progressHud.label.textColor = .darkGray
+        objc_setAssociatedObject(self, &Associate.hud, progressHud, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        return progressHud
+    }
+    var progressHud: MBProgressHUD {
+        if let progressHud = objc_getAssociatedObject(self, &Associate.hud) as? MBProgressHUD {
+            progressHud.isUserInteractionEnabled = true
+            return progressHud
+        }
+        return setProgressHud()
+    }
+    var progressHudIsShowing: Bool {
+        return self.progressHud.isHidden
+    }
+    func showProgressHud() {
+        DispatchQueue.main.async {
+            self.progressHud.show(animated: false)
+        }
+    }
+    func showProgressHud(label: String = "") {
+        self.progressHud.label.text = label
+        self.progressHud.show(animated: false)
+    }
+    func hideProgressHud() {
+        DispatchQueue.main.async {
+            self.progressHud.label.text = ""
+            self.progressHud.completionBlock = {
+                objc_setAssociatedObject(self, &Associate.hud, nil, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+            }
+            self.progressHud.hide(animated: false)
+        }
+    }
+}
+
+struct Associate {
+    static var hud: UInt8 = 0
 }
