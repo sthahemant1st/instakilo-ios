@@ -10,18 +10,24 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    var authCoordiantor: AuthCoordinator!
+    var dashboardCoordinator: DashboardCoordinator!
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(windowScene: windowScene)
-        
-        let loginVC = LoginViewController.loadFromNib()
-        let loginViewModel = LoginViewModel(
-            loginEndPoint: LoginEndPoint()
-        )
-        loginVC.viewModel = loginViewModel
-        let navigationController = UINavigationController(rootViewController: loginVC)
+        instantiateViewController()
+    }
+    
+    func instantiateViewController() {
+        let navigationController = UINavigationController()
+        if UserSessionManager.isUserLoggedIn {
+            dashboardCoordinator = DashboardCoordinator(navigationController: navigationController)
+            dashboardCoordinator.start()
+        } else {
+            authCoordiantor = AuthCoordinator(navigationController: navigationController)
+            authCoordiantor.start()
+        }
         
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()

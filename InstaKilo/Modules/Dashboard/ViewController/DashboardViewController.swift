@@ -10,6 +10,7 @@ import RxSwift
 import RxCocoa
 
 class DashboardViewController: UIViewController {
+    weak var coordinator: DashboardCoordinator!
     
     var viewModel: DashboardViewModel!
     let disposeBag = DisposeBag()
@@ -24,8 +25,11 @@ class DashboardViewController: UIViewController {
     private func configureViews() {
         logoutButton.rx
             .tap
-            .bind(to: viewModel.logoutButtonTapped)
-            .disposed(by: disposeBag)
+            .subscribe(onNext: {
+                print("logout")
+                self.coordinator.onLogout()
+            }).disposed(by: disposeBag)
+
     }
 
 }

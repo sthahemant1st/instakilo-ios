@@ -70,6 +70,10 @@
 		41D3ADCF28102588002B8FD0 /* NetworkKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADCE28102588002B8FD0 /* NetworkKeys.swift */; };
 		41D3ADD228102706002B8FD0 /* NetworkAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADD128102706002B8FD0 /* NetworkAdapter.swift */; };
 		41D3ADD428102722002B8FD0 /* NetworkRetrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADD328102722002B8FD0 /* NetworkRetrier.swift */; };
+		41D3ADD62811089A002B8FD0 /* NetworkCallerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADD52811089A002B8FD0 /* NetworkCallerFactory.swift */; };
+		41D3ADD82811101D002B8FD0 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADD72811101D002B8FD0 /* AuthCoordinator.swift */; };
+		41D3ADDA2811268C002B8FD0 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADD92811268C002B8FD0 /* UserSessionManager.swift */; };
+		41D3ADDC2811286C002B8FD0 /* DashboardCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D3ADDB2811286C002B8FD0 /* DashboardCoordinator.swift */; };
 		96719F0F303BD9E7922EBA4C /* Pods_InstaKilo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D7ED90FE95676F882B446768 /* Pods_InstaKilo.framework */; };
 		C273AE5A35055BDACBA0D967 /* Pods_InstaKiloTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA46789898B6B1CA8A9CA22C /* Pods_InstaKiloTests.framework */; };
 		C5A2BCEE0E4A185A4D87C557 /* Pods_InstaKilo_InstaKiloUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 669976686267DEFC75091709 /* Pods_InstaKilo_InstaKiloUITests.framework */; };
@@ -161,6 +165,10 @@
 		41D3ADCE28102588002B8FD0 /* NetworkKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkKeys.swift; sourceTree = "<group>"; };
 		41D3ADD128102706002B8FD0 /* NetworkAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAdapter.swift; sourceTree = "<group>"; };
 		41D3ADD328102722002B8FD0 /* NetworkRetrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkRetrier.swift; sourceTree = "<group>"; };
+		41D3ADD52811089A002B8FD0 /* NetworkCallerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCallerFactory.swift; sourceTree = "<group>"; };
+		41D3ADD72811101D002B8FD0 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
+		41D3ADD92811268C002B8FD0 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
+		41D3ADDB2811286C002B8FD0 /* DashboardCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCoordinator.swift; sourceTree = "<group>"; };
 		669976686267DEFC75091709 /* Pods_InstaKilo_InstaKiloUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaKilo_InstaKiloUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AF0E4FFDFD289232CE6023 /* Pods-InstaKiloTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKiloTests.debug.xcconfig"; path = "Target Support Files/Pods-InstaKiloTests/Pods-InstaKiloTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0A9046481C8E99159FFC5B7 /* Pods-InstaKilo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaKilo.release.xcconfig"; path = "Target Support Files/Pods-InstaKilo/Pods-InstaKilo.release.xcconfig"; sourceTree = "<group>"; };
@@ -311,9 +319,9 @@
 			isa = PBXGroup;
 			children = (
 				41D3ADB3280FBD5E002B8FD0 /* ViewIdentifiable.swift */,
+				41D3AD85280EBCA8002B8FD0 /* NibLoadable.swift */,
 				41D3AD89280EBCFC002B8FD0 /* Storyboarded.swift */,
 				41D3AD87280EBCC0002B8FD0 /* Coordinator.swift */,
-				41D3AD85280EBCA8002B8FD0 /* NibLoadable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -402,13 +410,14 @@
 		41D3AD92280EC004002B8FD0 /* NetworkCaller */ = {
 			isa = PBXGroup;
 			children = (
-				41D3ADB1280EDC82002B8FD0 /* NetworkCaller.swift */,
-				41D3ADD128102706002B8FD0 /* NetworkAdapter.swift */,
-				41D3ADD328102722002B8FD0 /* NetworkRetrier.swift */,
 				41D3ADCB281024E0002B8FD0 /* Managers */,
 				41D3ADAC280EDAEC002B8FD0 /* Heplpers */,
 				41D3ADA5280EDA3A002B8FD0 /* EndPoint */,
 				41D3ADA1280ED750002B8FD0 /* Protocol */,
+				41D3ADB1280EDC82002B8FD0 /* NetworkCaller.swift */,
+				41D3ADD52811089A002B8FD0 /* NetworkCallerFactory.swift */,
+				41D3ADD128102706002B8FD0 /* NetworkAdapter.swift */,
+				41D3ADD328102722002B8FD0 /* NetworkRetrier.swift */,
 			);
 			path = NetworkCaller;
 			sourceTree = "<group>";
@@ -479,6 +488,7 @@
 			children = (
 				41D3AD96280ED1CC002B8FD0 /* Login */,
 				41D3ADBF28100309002B8FD0 /* AuthEndPoints.swift */,
+				41D3ADD72811101D002B8FD0 /* AuthCoordinator.swift */,
 			);
 			path = Authentication;
 			sourceTree = "<group>";
@@ -518,6 +528,7 @@
 				41D3ADC42810205A002B8FD0 /* Model */,
 				41D3ADC328102052002B8FD0 /* ViewController */,
 				41D3ADC228102043002B8FD0 /* ViewModel */,
+				41D3ADDB2811286C002B8FD0 /* DashboardCoordinator.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -550,6 +561,7 @@
 			isa = PBXGroup;
 			children = (
 				41D3ADCC281024EF002B8FD0 /* TokenManager.swift */,
+				41D3ADD92811268C002B8FD0 /* UserSessionManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -859,13 +871,16 @@
 				41921E3E280D6B1C0012272F /* AppDelegate.swift in Sources */,
 				41D3AD66280EBBB1002B8FD0 /* NSAttributedString.swift in Sources */,
 				41D3AD65280EBBB1002B8FD0 /* Array.swift in Sources */,
+				41D3ADD82811101D002B8FD0 /* AuthCoordinator.swift in Sources */,
 				41D3AD80280EBBD1002B8FD0 /* UITextField.swift in Sources */,
 				41D3AD81280EBBD1002B8FD0 /* UIImage.swift in Sources */,
 				41D3ADB6280FC617002B8FD0 /* BaseRequestModel.swift in Sources */,
 				41D3ADB4280FBD5E002B8FD0 /* ViewIdentifiable.swift in Sources */,
 				41D3AD82280EBBD1002B8FD0 /* UIViewController.swift in Sources */,
 				41D3ADAA280EDA3A002B8FD0 /* EndPointBuilder.swift in Sources */,
+				41D3ADDC2811286C002B8FD0 /* DashboardCoordinator.swift in Sources */,
 				41921E6F280E7F200012272F /* Enviroment.swift in Sources */,
+				41D3ADD62811089A002B8FD0 /* NetworkCallerFactory.swift in Sources */,
 				41D3AD8A280EBCFC002B8FD0 /* Storyboarded.swift in Sources */,
 				41921E40280D6B1C0012272F /* SceneDelegate.swift in Sources */,
 				41D3ADB2280EDC82002B8FD0 /* NetworkCaller.swift in Sources */,
@@ -881,6 +896,7 @@
 				41D3AD67280EBBB1002B8FD0 /* Int.swift in Sources */,
 				41D3ADC028100309002B8FD0 /* AuthEndPoints.swift in Sources */,
 				41D3AD7F280EBBD1002B8FD0 /* UITableView.swift in Sources */,
+				41D3ADDA2811268C002B8FD0 /* UserSessionManager.swift in Sources */,
 				41D3AD7B280EBBD1002B8FD0 /* SceneDelegate+Extension.swift in Sources */,
 				41D3ADAE280EDAFF002B8FD0 /* HttpMethods.swift in Sources */,
 				41D3ADA3280ED763002B8FD0 /* ApiClient.swift in Sources */,

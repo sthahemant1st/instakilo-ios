@@ -11,7 +11,7 @@ import RxCocoa
 
 class LoginViewController: UIViewController {
     // MARK: variables
-//    weak var coordinator: AuthCoordinator
+    weak var coordinator: AuthCoordinator!
     let disposeBag = DisposeBag()
     var viewModel: LoginViewModel!
 
@@ -45,7 +45,8 @@ class LoginViewController: UIViewController {
             self.showAlertWithOk(withMessage: errorString )
         }).disposed(by: disposeBag)
         viewModel.loginSuccess.subscribe(onNext: {
-            self.showAlertWithOk(withMessage: "Login Successful")
+//            self.showAlertWithOk(withMessage: "Login Successful")
+            self.coordinator.onLoginSuccess()
         }).disposed(by: disposeBag)
     }
 
