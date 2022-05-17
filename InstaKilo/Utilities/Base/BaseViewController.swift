@@ -9,7 +9,7 @@ import UIKit
 
 class BaseViewController: UIViewController {
     var baseViewModel = BaseViewModel()
-    var activityIndicatorView = ActivityIndicatorView()
+//    var activityIndicatorView = ActivityIndicatorVie()
     
     override func viewDidLoad() {
         super.viewDidLoad()

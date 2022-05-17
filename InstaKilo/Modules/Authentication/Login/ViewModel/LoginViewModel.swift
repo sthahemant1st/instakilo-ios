@@ -56,8 +56,10 @@ class LoginViewModel: BaseViewModel {
                 self.loginSuccess.onNext(())
             } onFailure: { error in
                 self.handleFailure(error)
-            }.disposed(by: disposeBag)
-        hideActivityIndicator()
+            } onDisposed: {
+                self.hideActivityIndicator()
+            }
+            .disposed(by: disposeBag)
     }
     
     // MARK: public functions
