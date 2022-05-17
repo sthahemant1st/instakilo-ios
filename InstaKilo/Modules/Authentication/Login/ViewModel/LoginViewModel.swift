@@ -52,6 +52,7 @@ class LoginViewModel: BaseViewModel {
         loginApiClient.rxRequest(withObject: request, responseType: LoginResponse.self)
             .subscribe { [weak self] data in
                 guard let self = self else { return }
+                print("Sucess data ====> \(data)")
                 TokenManager.global.accessToken = data.token
                 self.loginSuccess.onNext(())
             } onFailure: { error in
